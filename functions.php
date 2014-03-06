@@ -2,7 +2,7 @@
 
 
 // Includes ! important
-// include_once( 'inc/stresspress.php' );
+include_once( 'inc/stresspress.php' );
 // include_once( 'inc/types.php' );
 // include_once( 'inc/ajax.php' );
 
@@ -11,6 +11,8 @@ add_action( 'init', 'sld_init' );
 function sld_init() {
 	
 	define( 'SITE_VERSION', SITE_VERSION );
+	
+	add_image_size( 'main-image', 560, 350, true );
 
 	if ( !is_admin() && !is_login_page() ) {
 		// scripts
@@ -24,4 +26,17 @@ function sld_init() {
 		wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), SITE_VERSION );
 	}
 }
+
+
+function content_dev($c){
+	return str_replace( 'simonbelair.ca', 'new.simonbelair.ca', $c );
+}
+add_filter( 'the_content', 'content_dev' );
+
+// remove grunion contact forms styles
+function remove_grunion_style() {
+	wp_dequeue_style('grunion.css');
+	wp_deregister_style('grunion.css');
+}
+add_action('wp_print_styles', 'remove_grunion_style');
 

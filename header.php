@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -14,15 +14,15 @@
 <![endif]-->
 
 </head>
-<body>
+<body <?php body_class() ?>>
 
 	<header>
 	
 		<div class="container">
 		
-			<h1 id="logo"><a href="<?= home_url(); ?>"><?php bloginfo('name') ?></a></h1>
+			<h1 id="logo"><a href="<?php echo home_url() ?>">Simon Bélair, Ac.</a></h1>
 			
-			<nav role="navigation">
+			<nav class="main">
 				<?php wp_nav_menu(array('menu' => 'primary')) ?>
 			</nav>
 		
@@ -30,4 +30,5 @@
 	
 	</header>
 
-	<div id="main" class="container">
+	<div class="container">
+

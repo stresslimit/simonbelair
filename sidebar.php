@@ -1,18 +1,14 @@
-<?php 	
-/* sidebar switcher */
-global $post;
-// if (get_post_type() == 'case-studies') : $sid = 'sidebar2';
-// elseif ((get_post_type() == 'post' && is_single()) || is_page('innovation') || is_author() || is_tax('vertical')) : $sid = 'sidebar5';
-// elseif (get_post_type() == 'news' || is_page('news-releases')) : $sid = 'sidebar7';
-// else : $sid = get_post_meta($post->ID, 'sidebar', true); 
-// endif;
-// if (get_post_type() == 'news' || is_page('news-releases') || is_page('about_us') || is_page('privacy-policy') || is_page('terms-of-use')) : $side = 'left'; else : $side = "right"; endif;
-// if (!$sid && get_post_type() == 'post') $sid = 'sidebar5'; // extra check just in case
- ?>
 
+		<div class="sidebar main">
+			<h1>Prenez un rendez-vous</h1>
+			<div class="form-rdv">
+			<?php
+			$c = do_shortcode( '[contact-form] [contact-field label="Nom" type="name" required="true" /] [contact-field label="Courriel" type="email" required="true" /] [contact-field label="Téléphone" type="text" /] [contact-field label="J\'aimerais un rendez-vous" type="select" options="Demain,Cette semaine,La semaine prochaine,Un peu plus tard" /] [contact-field label="Mes symtômes en bref" type="textarea" required="true" /] [/contact-form]' );
+			$c = str_replace( 'Submit &#187;', 'SOUMETTRE', $c );
+			echo $c;
+			?>
+			</div>
 
-<div id="sidebar-<?=$side?>" class="<?=$sid?>">
+			<!-- <h3>Derniers tweets</h3> -->
 
-	<?php dynamic_sidebar($sid); ?>
-
-</div>
+		</div>
