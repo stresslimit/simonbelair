@@ -10,7 +10,7 @@ include_once( 'inc/stresspress.php' );
 add_action( 'init', 'sld_init' );
 function sld_init() {
 	
-	define( 'SITE_VERSION', SITE_VERSION );
+	define( 'SITE_VERSION', '0.1' );
 	
 	add_image_size( 'main-image', 560, 350, true );
 
@@ -24,6 +24,7 @@ function sld_init() {
 
 		// stylesheets
 		wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), SITE_VERSION );
+		wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' );
 	}
 }
 
@@ -31,7 +32,7 @@ function sld_init() {
 function content_dev($c){
 	return str_replace( 'simonbelair.ca', 'new.simonbelair.ca', $c );
 }
-add_filter( 'the_content', 'content_dev' );
+// add_filter( 'the_content', 'content_dev' );
 
 // remove grunion contact forms styles
 function remove_grunion_style() {

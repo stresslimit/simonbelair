@@ -62,7 +62,7 @@ sup { line-height:1; vertical-align:baseline; bottom:0.8em; font-size:50%; }
 /*  headings */
 h1,h2,h3,h4,h5,h6 {}
 h1,h3 { font-family:'Apercu-Mono', monospace; color:#ce2a1e; }
-h1 { font-size:20px; padding-bottom:10px; border-bottom:2px solid #ce2a1e; margin-bottom:20px; }
+h1 { font-size:20px; padding-bottom:10px; border-bottom:3px solid #ce2a1e; margin-bottom:20px; }
 h2 { font-size:16px; text-transform:uppercase; font-weight:bold; }
 h3 { font-size:16px; }
 h4 { font-size:; }
@@ -97,14 +97,17 @@ article ul li { list-style-type:disc; }
 
 /* header */
 header { padding:30px 0 50px; }
-#logo { padding-bottom:20px; margin:0; border:0; }
-#logo a { display:block; text-decoration:none; border-bottom:0; width:300px; height:84px; background:url('images/logo.png') 0 0 no-repeat; text-indent:-9999em; }
+header h1 { padding-bottom:20px; margin:0; border:0; position:relative; }
+#logo { display:block; text-decoration:none; border-bottom:0; width:300px; height:84px; background:url('images/logo.png') 0 0 no-repeat; text-indent:-9999em; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (-o-min-device-pixel-ratio: 3/2),
     only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-        #logo a { background-image:url('images/logo@2x.png'); background-size:300px 84px; }
-}
+    only screen and (min-device-pixel-ratio: 1.5)
+  {
+    #logo { background-image:url('images/logo@2x.png'); background-size:300px 84px; }
+  }
+#social { position:absolute; top:60px; right:0; }
+#social a { border:0; }
 
 /* home page */
 #home-banners { position:relative; height:370px; }
@@ -119,7 +122,7 @@ a.home-slider h1 { display:none; }
 /* content */
 .main-image { padding:0 0 10px 0; }
 article p { text-align:justify; }
-article h3 { border-top:2px solid #ce2a1e; padding:15px 0; margin-top:20px; }
+article h3 { border-top:3px solid #ce2a1e; padding:15px 0; margin-top:20px; }
 article h3 + ul { font-family:arial, sans-serif; font-size:15px; }
 article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 .troubles {
@@ -135,6 +138,7 @@ article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 .sidebar.main { border-top:3px solid #ce2a1e; padding-top:10px; }
 .sidebar.main h1 { border:0; }
 .form-rdv { border-bottom:3px solid #ce2a1e; }
+.form-rdv blockquote { padding:0; }
 
 /* contact form */
 .contact-form div { margin-bottom:10px; }

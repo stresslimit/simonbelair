@@ -19,8 +19,14 @@
 	<header>
 	
 		<div class="container">
-		
-			<h1 id="logo"><a href="<?php echo home_url() ?>">Simon Bélair, Ac.</a></h1>
+
+			<h1>
+        <a href="<?php echo home_url() ?>" id="logo">Simon Bélair, Ac.</a>
+        <span id="social">
+          <a href=""><i class="fa fa-facebook"> </i> </a>
+          <a href=""><i class="fa fa-twitter"> </i> </a>
+        </span>
+      </h1>
 			
 			<nav class="main">
 				<?php wp_nav_menu(array('menu' => 'primary')) ?>

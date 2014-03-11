@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 
 	contact_style($);
 	home_banners($);
+  menu_hover($);
 
 });
 
@@ -57,6 +58,22 @@ function home_banners() {
 }
 
 
+function menu_hover() {
+  var $current_holder = $('header .menu > ul > li.current_page_ancestor, header .menu > ul > li.current_page_item');
+  var current_class = $current_holder.hasClass('current_page_ancestor') ? 'current_page_ancestor' : 'current_page_item';
+  $('header .menu > ul > li').hover(
+    function () {
+      if ( $current_holder==$(this) ) return;
+      $current_holder.removeClass(current_class);
+      $(this).addClass(current_class);
+    },
+    function () {
+      if ( $current_holder==$(this) ) return;
+      $current_holder.addClass(current_class);
+      $(this).removeClass(current_class);
+    }
+  );
+}
 
 
 function contact_style() {
