@@ -4,9 +4,9 @@ Author: stresslimit
 
 jQuery(document).ready(function($) {
 
-	contact_style($);
-	home_banners($);
-  menu_hover($);
+	contact_style();
+	home_banners();
+  menu_hover();
 
 });
 

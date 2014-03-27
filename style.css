@@ -45,8 +45,8 @@ body { min-height:100%; }
 	-------------------------------------------------------------*/
 
 /* layout */
-body { font-size:16px; line-height:1.4; color:#666; background:#f6f6f6; font-family:serif; }
-.container { width:896px; margin:0 auto; }
+body { font-size:16px; line-height:1.4; color:#666; /*background:#e1e1e1;*/ background:#f6f6f6; font-family:serif; }
+.container { width:896px; margin:0 auto; /*padding:0 30px; background:#f6f6f6;*/ }
 #main { float:left; padding-right:30px; width:560px; border-right:1px solid #ccc; margin-bottom:40px; }
 .sidebar { float:right; width:276px; }
 
@@ -55,7 +55,7 @@ p { margin:0 0 0.8em 0; }
 strong, b { font-weight:bold; }
 em, i { font-style:italic; }
 small, .small { font-size:0.8em; }
-blockquote, q { quotes:none; padding:0 55px 0; margin:1.5em 0; }
+blockquote, q { quotes:none; padding:0 55px 0; margin:1.5em 0; font-style:italic; font-size:1.5em; }
 pre { white-space:pre-wrap; padding:0 55px 0; margin:1.5em 0; }
 sup { line-height:1; vertical-align:baseline; bottom:0.8em; font-size:50%; }
 
@@ -108,6 +108,7 @@ header h1 { padding-bottom:20px; margin:0; border:0; position:relative; }
   }
 #social { position:absolute; top:60px; right:0; }
 #social a { border:0; }
+#social a:hover { color:#; }
 
 /* home page */
 #home-banners { position:relative; height:370px; }
@@ -135,8 +136,9 @@ article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 }
 
 /* sidebar */
-.sidebar.main { border-top:3px solid #ce2a1e; padding-top:10px; }
-.sidebar.main h1 { border:0; }
+.sidebar.principal { border-top:3px solid #ce2a1e; padding-top:10px; }
+.sidebar.principal h1 { border:0; }
+.sidebar.principal h3 { margin:10px 0 20px 0; }
 .form-rdv { border-bottom:3px solid #ce2a1e; }
 .form-rdv blockquote { padding:0; }
 
@@ -151,13 +153,14 @@ input:-moz-placeholder, textarea:-moz-placeholder,
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color:#666; font-size:12px; }
 
 /* footer */
-footer { font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; clear:both; border-top:1px solid #ccc; margin-top:40px; padding:20px 0; }
+footer, .adresse { font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; }
+footer { clear:both; border-top:1px solid #ccc; margin-top:40px; padding:20px 0; }
 footer .menu li { display:block; float:left; padding-right:20px; }
 footer .menu li li { float:none; padding:0; }
 footer .menu li a { text-decoration:none; border-bottom:0; color:#333; margin-bottom:0.8em; display:inline-block; }
 footer .menu li li a { color:#666; }
 footer .adresse { float:right; }
-footer .adresse strong { color:#ce2a1e; }
+.adresse strong { color:#ce2a1e; }
 
 
 /*  --------------------------------------------------------------

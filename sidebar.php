@@ -1,5 +1,5 @@
 
-		<div class="sidebar main">
+		<div class="sidebar principal">
 			<h1>Prenez un rendez-vous</h1>
 			<div class="form-rdv">
 			<?php
@@ -9,6 +9,11 @@
 			?>
 			</div>
 
-			<!-- <h3>Derniers tweets</h3> -->
+      <h3>Pour toute autre information</h3>
+			<p class="adresse"><strong>Simon Bélair, Acupuncteur</strong><br>
+			483, boul. St-Joseph, Est<br>
+			Montréal (Québec) H2J 1J8<br>
+			514 794-4410<br>
+			Metro Laurier</p>
 
 		</div>

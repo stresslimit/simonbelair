@@ -16,15 +16,16 @@
 </head>
 <body <?php body_class() ?>>
 
+	<div class="container">
+
 	<header>
-	
-		<div class="container">
 
 			<h1>
         <a href="<?php echo home_url() ?>" id="logo">Simon Bélair, Ac.</a>
         <span id="social">
-          <a href=""><i class="fa fa-facebook"> </i> </a>
-          <a href=""><i class="fa fa-twitter"> </i> </a>
+          <a href="https://www.facebook.com/SimonBelairAc"><i class="fa fa-facebook-square"> </i> </a>
+          <a href="https://twitter.com/Acupuncture_Mtl"><i class="fa fa-twitter-square"> </i> </a>
+          <a href="mailto:info@simonbelair.ca"><i class="fa fa-envelope"> </i> </a>
         </span>
       </h1>
 			
@@ -32,9 +33,5 @@
 				<?php wp_nav_menu(array('menu' => 'primary')) ?>
 			</nav>
 		
-		</div>
-	
 	</header>
-
-	<div class="container">
 
