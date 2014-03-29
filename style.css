@@ -45,7 +45,7 @@ body { min-height:100%; }
 	-------------------------------------------------------------*/
 
 /* layout */
-body { font-size:16px; line-height:1.4; color:#666; /*background:#e1e1e1;*/ background:#f6f6f6; font-family:serif; }
+body { font-size:16px; line-height:1.4; color:#666; background:#f6f6f6; /*background:#e1e1e1;*/ font-family:serif; }
 .container { width:896px; margin:0 auto; /*padding:0 30px; background:#f6f6f6;*/ }
 #main { float:left; padding-right:30px; width:560px; border-right:1px solid #ccc; margin-bottom:40px; }
 .sidebar { float:right; width:276px; }
@@ -180,7 +180,7 @@ header .menu a { text-decoration:none; border-bottom:0; line-height:1em; }
 /* selected item */
 header .menu .current_page_item, 
 header .menu .current_page_ancestor 
-	{ border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:0; margin-left:13px; padding-right:13px; padding-bottom:7px; background:#f6f6f6; }
+	{ border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:0; margin-left:16px; padding-right:16px; padding-bottom:7px; background:#f6f6f6; }
 header .menu a:hover, header .menu .current_page_item > a, header .menu .current_page_ancestor > a { color:#ce2a1e; }
 
 /* accueil */
