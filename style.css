@@ -161,6 +161,8 @@ footer .menu li a { text-decoration:none; border-bottom:0; color:#333; margin-bo
 footer .menu li li a { color:#666; }
 footer .adresse { float:right; }
 .adresse strong { color:#ce2a1e; }
+.adresse a { border:0; }
+.adresse a .fa { margin-left:5px; }
 
 
 /*  --------------------------------------------------------------
