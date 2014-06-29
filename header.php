@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <title><?php wp_title( ' | ', true, 'right' ) ?>Simon Bélair, Acupuncteur</title>
 <link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
@@ -28,10 +29,17 @@
           <a href="mailto:info@simonbelair.ca"><i class="fa fa-envelope"> </i> </a>
         </span>
       </h1>
-			
-			<nav class="main">
+
+			<nav id="main_menu" class="main">
 				<?php wp_nav_menu(array('menu' => 'primary')) ?>
 			</nav>
-		
+
+      <nav id="mobile_menu" class="mobileonly">
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="#demande-de-rendez-vous">Demandez un rendez-vous <i class="fa fa-plus-square"></i></a>
+      </nav>
+
+      <nav id="jumptomenu" class="mobileonly"><a href="#footer_menu"><i class="fa fa-bars"></i></a></nav>
+
 	</header>
 

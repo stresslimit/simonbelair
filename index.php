@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	
-  <div id="main">
+  <div id="main"<?php if ( !is_single() ) : ?> class="excerpt"<?php endif; ?>>
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
@@ -8,7 +8,11 @@
 									
 			<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h1>
 
-			<?php the_content() ?>
+			<?php if ( is_single() ) : ?>
+  			<?php the_content() ?>
+      <?php else : ?>
+  			<?php the_excerpt() ?>
+			<?php endif; ?>
 			
 		</article>
 		
