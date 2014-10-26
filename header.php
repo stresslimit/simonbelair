@@ -14,6 +14,17 @@
 <script src="<?php bloginfo('template_url') ?>/js/selectivizr.js"></script>
 <![endif]-->
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55411861-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 <body <?php body_class() ?>>
 
@@ -23,6 +34,12 @@
 
 			<h1>
         <a href="<?php echo home_url() ?>" id="logo">Simon Bélair, Ac.</a>
+  			<div class="adresse">
+  				<p>
+    				6955 Christophe-Colomb, Bureau 104<br>
+    				Montréal  514-794-4410
+          </p>
+        </div>
         <span id="social">
           <a href="https://www.facebook.com/SimonBelairAc"><i class="fa fa-facebook-square"> </i> </a>
           <a href="https://twitter.com/Acupuncture_Mtl"><i class="fa fa-twitter-square"> </i> </a>
@@ -35,7 +52,7 @@
 			</nav>
 
       <nav id="mobile_menu" class="mobileonly">
-        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="tel:514-794-4410"><i class="fa fa-phone"></i> Contact</a>
         <a href="#demande-de-rendez-vous">Demandez un rendez-vous <i class="fa fa-plus-square"></i></a>
       </nav>
 

@@ -110,6 +110,7 @@ header h1 { padding-bottom:20px; margin:0; border:0; position:relative; }
   {
     #logo { background-image:url('images/logo@2x.png'); background-size:300px 84px; }
   }
+header .adresse p { color:#666; margin:5px 0 0 110px; }
 #social { position:absolute; top:60px; right:0; }
 #social a { border:0; }
 #social a:hover { color:#ce2a1e; }
@@ -155,7 +156,7 @@ article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 /* contact form */
 .contact-form div { margin-bottom:10px; }
 input, textarea, select, label { font-family:arial, sans-serif; font-size:12px; }
-input[type="text"], textarea { background:#f6f6f6; padding:5px; width:264px; border:1px solid #ccc; }
+input[type="text"], input[type="email"], input[type="tel"], textarea { background:#f6f6f6; padding:5px; width:264px; border:1px solid #ccc; }
 textarea { height:160px; }
 input[type="submit"] { font-family:'Apercu-Mono', monospace; text-transform:uppercase; letter-spacing:1px; background:#e1e1e1; border:1px solid #e1e1e1; border-right-color:#ccc; border-bottom-color:#ccc; padding:5px; cursor:pointer; }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, 
