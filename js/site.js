@@ -77,10 +77,8 @@ function menu_hover() {
 
 
 function contact_style() {
-	$('.contact-form input[type="text"], .contact-form textarea').each(function() {
-		var name = $(this).attr('name');
-		var label = $('label[for="'+ name +'"]');
-		// console.log('label[for="'+ name +'"]');
+	$('.wpcf7-form input[type="text"], .wpcf7-form input[type="email"], .wpcf7-form input[type="tel"], .wpcf7-form textarea').each(function() {
+		var label = $(this).parent().siblings('label');
 		label.hide();
 		var text = label.html();
 		text = text.replace( /\<.*$/ , '' );
