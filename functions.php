@@ -18,7 +18,7 @@ function sld_init() {
 		// scripts
 		wp_deregister_script( 'l10n' );
 		wp_deregister_script( 'jquery');
-		wp_register_script( 'jquery', '//code.jquery.com/jquery.min.js', false, SITE_VERSION );
+		wp_register_script( 'jquery', '//code.jquery.com/jquery-2.1.1.min.js', false, SITE_VERSION );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'site', get_bloginfo('template_url').'/js/site.js', 'jquery', SITE_VERSION );
 
