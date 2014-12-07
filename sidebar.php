@@ -17,4 +17,13 @@
       514 794-4410<br>
       Metro Laurier</p> -->
 
+
+<a class="twitter-timeline" 
+href="https://twitter.com/Acupuncture_Mtl" 
+data-widget-id="541412331868393472" 
+data-chrome="transparent"
+data-border-color="#ccc"
+>Tweets de @Acupuncture_Mtl</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 		</div>
