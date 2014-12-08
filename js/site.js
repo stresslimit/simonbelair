@@ -59,9 +59,9 @@ function home_banners() {
 
 
 function menu_hover() {
-  var $current_holder = $('header .menu > ul > li.current_page_ancestor, header .menu > ul > li.current_page_item');
+  var $current_holder = $('header .menu-principal-container > ul > li.current_page_ancestor, header .menu-principal-container > ul > li.current_page_item');
   var current_class = $current_holder.hasClass('current_page_ancestor') ? 'current_page_ancestor' : 'current_page_item';
-  $('header .menu > ul > li').hover(
+  $('header .menu-principal-container > ul > li').hover(
     function () {
       if ( $current_holder==$(this) ) return;
       $current_holder.removeClass(current_class);

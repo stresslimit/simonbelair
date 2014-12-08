@@ -203,40 +203,40 @@ footer .menu li li a { color:#666; }
 	-------------------------------------------------------------*/
 
 /* main menu */
-header .menu { font-family:'Apercu-Mono', monospace; position:relative; border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:3px 0 5px 0; height:28px; }
-header .menu > ul { position:relative; top:5px; }
-header .menu li { display:block; float:left; padding:0 0 0 13px; }
-header .menu li:first-child { padding-left:0; }
-header .menu li li:first-child { padding-left:13px; }
-header .menu li ul { display:none; position:absolute; margin-left:-14px; }
-header .menu li li { border-bottom:0; padding-bottom:0; padding-top:10px; }
-header .menu a { text-decoration:none; border-bottom:0; line-height:1em; }
+header .menu-principal-container { font-family:'Apercu-Mono', monospace; position:relative; border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:3px 0 5px 0; height:28px; }
+header .menu-principal-container > ul { position:relative; top:5px; }
+header .menu-principal-container li { display:block; float:left; padding:0 0 0 13px; }
+header .menu-principal-container li:first-child { padding-left:0; }
+header .menu-principal-container li li:first-child { padding-left:13px; }
+header .menu-principal-container li ul { display:none; position:absolute; margin-left:-14px; }
+header .menu-principal-container li li { border-bottom:0; padding-bottom:0; padding-top:10px; }
+header .menu-principal-container a { text-decoration:none; border-bottom:0; line-height:1em; }
 
 /* selected item */
-header .menu .current_page_item, 
-header .menu .current_page_ancestor 
+header .menu-principal-container .current_page_item, 
+header .menu-principal-container .current_page_ancestor 
 	{ border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:0; margin-left:16px; padding-right:16px; padding-bottom:7px; background:#f6f6f6; }
-header .menu a:hover, header .menu .current_page_item > a, header .menu .current_page_ancestor > a { color:#ce2a1e; }
+header .menu-principal-container a:hover, header .menu-principal-container .current_page_item > a, header .menu-principal-container .current_page_ancestor > a { color:#ce2a1e; }
 
 /* accueil */
-header .menu > ul > li:first-child { border-left:0; border-right:0; margin-left:0; background:transparent; padding-right:0; }
+header .menu-principal-container > ul > li:first-child { border-left:0; border-right:0; margin-left:0; background:transparent; padding-right:0; }
 
 /* menu bullets */
-header .menu li:before, header .menu .children .current_page_item:before, 
-header .menu .children .current_page_item + li:before, 
-header .menu > ul > li.current_page_item:first-child + li:before 
+header .menu-principal-container li:before, header .menu-principal-container .children .current_page_item:before, 
+header .menu-principal-container .children .current_page_item + li:before, 
+header .menu-principal-container > ul > li.current_page_item:first-child + li:before 
 	{ content:'\2022'; margin-right:13px; }
 
 /* selected items remove bullets + put borders */
-header .menu li:first-child:before, /* first children */
-header .menu .current_page_item:before, header .menu .current_page_ancestor:before, 
-header .menu .current_page_item:first-child:before,
-header .menu .current_page_item + li:before, header .menu .current_page_ancestor + li:before 
+header .menu-principal-container li:first-child:before, /* first children */
+header .menu-principal-container .current_page_item:before, header .menu-principal-container .current_page_ancestor:before, 
+header .menu-principal-container .current_page_item:first-child:before,
+header .menu-principal-container .current_page_item + li:before, header .menu-principal-container .current_page_ancestor + li:before 
 	{ content: ''; margin-right:0; }
 
 /* borders on submenus */
-header .menu .current_page_item ul, header .menu .current_page_ancestor ul { display:block; border-left:1px solid #ccc; }
-header .menu .children .current_page_item { border:0; padding-bottom:0; padding-right:0; margin-left:0; background:transparent; }
+header .menu-principal-container .current_page_item ul, header .menu-principal-container .current_page_ancestor ul { display:block; border-left:1px solid #ccc; }
+header .menu-principal-container .children .current_page_item { border:0; padding-bottom:0; padding-right:0; margin-left:0; background:transparent; }
 
 
 
