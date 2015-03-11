@@ -114,6 +114,7 @@ header .adresse p { color:#666; margin:5px 0 0 110px; }
 #social { position:absolute; top:60px; right:0; }
 #social a { border:0; }
 #social a:hover { color:#ce2a1e; }
+.gift-cert-icon { width:45px; }
 #mobile_menu a { display:inline-block; }
 #mobile_menu a::first-child { float:left; }
 #mobile_menu a::last-child { float:right; }

@@ -41,6 +41,7 @@
           </p>
         </div>
         <span id="social">
+          <a href="/cadeau"><img class="gift-cert-icon" src="<?php echo get_template_directory_uri() ?>/images/gift-cert.svg"></a>
           <a href="https://www.facebook.com/SimonBelairAc"><i class="fa fa-facebook-square"> </i> </a>
           <a href="https://twitter.com/Acupuncture_Mtl"><i class="fa fa-twitter-square"> </i> </a>
           <a href="mailto:info@simonbelair.ca"><i class="fa fa-envelope"> </i> </a>
@@ -48,7 +49,7 @@
       </h1>
 
 			<nav id="main_menu" class="main">
-				<?php wp_nav_menu(array('menu' => 'primary')) ?>
+				<?php wp_nav_menu( array( 'menu' => 'primary', 'container_class' => 'menu-principal-container' ) ) ?>
 			</nav>
 
       <nav id="mobile_menu" class="mobileonly">
