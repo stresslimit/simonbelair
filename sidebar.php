@@ -1,29 +1,28 @@
 
 		<div class="sidebar principal">
-			<h1 id="demande-de-rendez-vous">Demande de rendez-vous</h1>
+			<h1 id="demande-de-rendez-vous"><?php _e('Request an appointment', 'simonbelair'); ?></h1>
 			<div class="form-rdv">
-			<?php
-      $c = do_shortcode( '[contact-form-7 id="784" title="RDV Acupuncture Montreal"]' );
-      // $c = do_shortcode( '[contact-form subject="Acupuncture Montréal RDV" to="belair.simon@gmail.com"] [contact-field label="Nom" type="name" required="true" /] [contact-field label="Courriel" type="email" required="true" /] [contact-field label="Téléphone" type="text" /] [contact-field label="J’aimerais un rendez-vous" type="select" options="Demain,Cette semaine,La semaine prochaine,Un peu plus tard" /] [contact-field label="Mes symtômes en bref" type="textarea" required="true" /] [/contact-form]' );
-			$c = str_replace( 'Submit &#187;', 'SOUMETTRE', $c );
-			echo $c;
-			?>
+			<?php $c = do_shortcode( '[contact-form-7 id="784" title="RDV Acupuncture Montreal"]' );
+			if ( ICL_LANGUAGE_CODE == 'en' ) :
+				$c = str_replace( 'Nom', 'Name', $c );
+				$c = str_replace( 'Courriel', 'Email', $c );
+				$c = str_replace( 'Téléphone', 'Telephone', $c );
+				$c = str_replace( 'J’aimerais un rendez-vous', 'I would like an appointment<br />', $c );
+				$c = str_replace( 'Demain', 'Tomorrow', $c );
+				$c = str_replace( 'Cette semaine', 'This week', $c );
+				$c = str_replace( 'La semaine prochaine', 'Next week', $c );
+				$c = str_replace( 'Un peu plus tard', 'A little later', $c );
+				$c = str_replace( 'Mes symptômes en bref', 'My symptoms in brief', $c );
+				$c = str_replace( 'Soumettre', 'Submit', $c );
+			endif; echo $c; ?>
 			</div>
-
-      <!-- <h3>Pour toute autre information</h3>
-      <p class="adresse"><a href="mailto:&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x73;&#x69;&#x6D;&#x6F;&#x6E;&#x62;&#x65;&#x6C;&#x61;&#x69;&#x72;&#x2E;&#x63;&#x61;"><strong>Simon Bélair, Acupuncteur</strong> <i class="fa fa-envelope"></i></a><br>
-      483, boul. St-Joseph, Est<br>
-      Montréal (Québec) H2J 1J8<br>
-      514 794-4410<br>
-      Metro Laurier</p> -->
-
 
 <a class="twitter-timeline" 
 href="https://twitter.com/Acupuncture_Mtl" 
 data-widget-id="541412331868393472" 
 data-chrome="transparent"
 data-border-color="#ccc"
->Tweets de @Acupuncture_Mtl</a>
+><?php _e('Tweets by @Acupuncture_Mtl', 'simonbelair'); ?></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 		</div>

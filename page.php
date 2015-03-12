@@ -12,18 +12,21 @@
 
 					<div id="controls"><b><a href="#slideA" class="jump">●</a><a href="#slideB" class="jump">●</a><a href="#slideC" class="jump">●</a></b></div>
 
-					<a id="slideA" class="home-slider main-image" href="<?php echo site_url( '/traitements/acupuncture' ) ?>">
-						<h1>Qu’est-ce que l’acupuncture?</h1>
+					<?php $lang = ''; if ( ICL_LANGUAGE_CODE == 'en' )
+						$lang .= '/' . ICL_LANGUAGE_CODE; ?>
+
+					<a id="slideA" class="home-slider main-image" href="<?php echo site_url( $lang . '/' . __('treatments', 'simonbelair') . '/acupuncture' ) ?>">
+						<h1><?php _e('What is acupuncture?', 'simonbelair'); ?></h1>
 						<img src="<?php bloginfo('template_url') ?>/images/content/SB-WWW-Acupuncture-AvecTitre.jpg">
 					</a>
 
-					<a id="slideB" class="home-slider main-image" href="<?php echo site_url( '/traitements/qi-gong' ) ?>">
-						<h1>Qu’est-ce que le&nbsp;tuina?</h1>
+					<a id="slideB" class="home-slider main-image" href="<?php echo site_url( $lang . '/' . __('treatments', 'simonbelair') . '/qi-gong' ) ?>">
+						<h1><?php _e('What is &nbsp;tuina?', 'simonbelair'); ?></h1>
 						<img src="<?php bloginfo('template_url') ?>/images/content/SB-WWW-QiGong-AvecTitre.jpg">
 					</a>
 
-					<a id="slideC" class="home-slider main-image" href="<?php echo site_url( '/traitements/tui-na' ) ?>">
-						<h1>Qu’est-ce que le&nbsp;Qi&nbsp;gong?</h1>
+					<a id="slideC" class="home-slider main-image" href="<?php echo site_url( $lang . '/' . __('treatments', 'simonbelair') . '/tui-na' ) ?>">
+						<h1><?php _e('What is&nbsp;Qi&nbsp;gong?', 'simonbelair'); ?></h1>
 						<img src="<?php bloginfo('template_url') ?>/images/content/SB-WWW-Tuina-AvecTitre.jpg">
 					</a>
 

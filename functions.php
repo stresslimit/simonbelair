@@ -41,3 +41,9 @@ function remove_grunion_style() {
 }
 add_action('wp_print_styles', 'remove_grunion_style');
 
+// localization
+
+add_action('after_setup_theme', 'simonbelair_theme_setup');
+function simonbelair_theme_setup(){
+    load_theme_textdomain('simonbelair', get_template_directory() . '/languages');
+}

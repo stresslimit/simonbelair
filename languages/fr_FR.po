@@ -1,0 +1,180 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simon Bélair, Acupuncteur\n"
+"POT-Creation-Date: 2015-03-12 12:00-0500\n"
+"PO-Revision-Date: 2015-03-12 12:00-0500\n"
+"Last-Translator: Ned Zimmerman <ned@bight.ca>\n"
+"Language-Team: Ned Zimmerman <ned@bight.ca>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:3
+msgid ""
+"Error 404 - The page you were looking for was not found. Please try again!"
+msgstr ""
+"Erreur 404 - La page que vous cherchez n'a pas été trouvée. S'il vous plaît "
+"essayer de nouveau!"
+
+#: comments.php:9
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Cet article est protégé par un mot de passe. Entrez le mot de passe pour "
+"afficher tous les commentaires."
+
+#: comments.php:20
+msgid "<span>No</span> Responses"
+msgstr "<span>Aucune</span> réponse"
+
+#: comments.php:20
+msgid "<span>One</span> Response"
+msgstr "<span>Une</span> réponse"
+
+#: comments.php:20
+msgid "<span>%</span> Responses"
+msgstr "<span>%</span> réponses"
+
+#: comments.php:20
+msgid "to"
+msgstr "à"
+
+#: comments.php:47
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:58
+msgid "Leave a Reply"
+msgstr "Laisser un commentaire"
+
+#: comments.php:58
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Laisser un commentaire pour %s"
+
+#: comments.php:68
+msgid "Logged in as"
+msgstr "Connecté en tant que"
+
+#: comments.php:68
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: comments.php:75
+msgid "Name"
+msgstr "Nom"
+
+#: comments.php:76
+msgid "Your Name"
+msgstr "Votre nom"
+
+#: comments.php:80
+msgid "Mail"
+msgstr "Courriel"
+
+#: comments.php:81
+msgid "Your Email"
+msgstr "Votre email"
+
+#: comments.php:82
+msgid "(will not be published)"
+msgstr "(ne sera pas publié)"
+
+#: comments.php:86
+msgid "Website"
+msgstr "Site web"
+
+#: comments.php:87
+msgid "Your Website"
+msgstr "Votre site web"
+
+#: comments.php:94
+msgid "Your Comment Here..."
+msgstr "Votre commentaire ici..."
+
+#: comments.php:97
+msgid "Submit Comment"
+msgstr "Commenter"
+
+#: comments.php:101
+msgid "You can use these tags:"
+msgstr "Vous pouvez utiliser ces balises:"
+
+#: footer.php:10 header.php:56
+msgid "Contact"
+msgstr "Contact"
+
+#: footer.php:13 footer.php:21
+msgid "Acupuncturist"
+msgstr "Acupuncteur"
+
+#: footer.php:17
+msgid "View a map"
+msgstr "Afficher une carte"
+
+#: header.php:57 sidebar.php:3
+msgid "Request an appointment"
+msgstr "Demande de rendez-vous"
+
+#: index.php:26
+msgid "404 - Page Not Found"
+msgstr "404 - Page non trouvée"
+
+#: page.php:18 page.php:23 page.php:28
+msgid "treatments"
+msgstr "traitements"
+
+#: page.php:19
+msgid "What is acupuncture?"
+msgstr "Qu’est-ce que l’acupuncture?"
+
+#: page.php:24
+msgid "What is &nbsp;tuina?"
+msgstr "Qu’est-ce que le&nbsp;tuina?"
+
+#: page.php:29
+msgid "What is&nbsp;Qi&nbsp;gong?"
+msgstr "Qu’est-ce que le&nbsp;Qi&nbsp;gong?"
+
+#: sidebar.php:25
+msgid "Tweets by @Acupuncture_Mtl"
+msgstr "Tweets de @Acupuncture_Mtl"
+
+#~ msgid "Email"
+#~ msgstr "Courriel"
+
+#~ msgid "Telephone"
+#~ msgstr "Téléphone"
+
+#~ msgid "I would like an appointment"
+#~ msgstr "J’aimerais un rendez-vous"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Demain"
+
+#~ msgid "This week"
+#~ msgstr "Cette semaine"
+
+#~ msgid "Next week"
+#~ msgstr "La semaine prochaine"
+
+#~ msgid "Later"
+#~ msgstr "Un peu plus tard"
+
+#~ msgid "My symptoms in brief"
+#~ msgstr "Mes symptômes en bref"
+
+#~ msgid "Submit"
+#~ msgstr "Soumettre"
+
+#~ msgid "View map"
+#~ msgstr "Afficher une carte"

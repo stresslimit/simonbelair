@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title><?php wp_title( ' | ', true, 'right' ) ?>Simon Bélair, Acupuncteur</title>
+<title><?php wp_title( ' | ', true, 'right' ) ?></title>
 <link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
 
@@ -37,7 +37,7 @@
   			<div class="adresse">
   				<p>
     				6955 Christophe-Colomb, Bureau 104<br>
-    				Montréal  514-794-4410
+    				Montréal 514-794-4410
           </p>
         </div>
         <span id="social">
@@ -53,8 +53,8 @@
 			</nav>
 
       <nav id="mobile_menu" class="mobileonly">
-        <a href="tel:514-794-4410"><i class="fa fa-phone"></i> Contact</a>
-        <a href="#demande-de-rendez-vous">Demandez un rendez-vous <i class="fa fa-plus-square"></i></a>
+        <a href="tel:514-794-4410"><i class="fa fa-phone"></i> <?php _e('Contact', 'simonbelair'); ?></a>
+        <a href="#demande-de-rendez-vous"><?php _e('Request an appointment', 'simonbelair'); ?> <i class="fa fa-plus-square"></i></a>
       </nav>
 
       <nav id="jumptomenu" class="mobileonly"><a href="#footer_menu"><i class="fa fa-bars"></i></a></nav>

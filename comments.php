@@ -6,7 +6,7 @@
 
   if ( post_password_required() ) { ?>
   	<div class="help">
-    	<p class="nocomments">This post is password protected. Enter the password to view comments.</p>
+    	<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'simonbelair'); ?></p>
   	</div>
   <?
     return;
@@ -17,7 +17,7 @@
 
 <?php if ( have_comments() ) : ?>
 	
-	<h3 id="comments" class="h2"><?php comments_number('<span>No</span> Responses', '<span>One</span> Response', '<span>%</span> Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'simonbelair'), __('<span>One</span> Response', 'simonbelair'), __('<span>%</span> Responses', 'simonbelair') );?> <?php _e('to', 'simonbelair'); ?> &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<nav id="comment-nav">
 		<ul class="clear">
@@ -44,7 +44,7 @@
 
 	<?php else : // comments are closed ?>
 	<?php // If comments are closed. ?>
-	<p class="nocomments">Comments are closed.</p>
+	<p class="nocomments"><?php _e('Comments are closed.', 'simonbelair'); ?></p>
 
 	<?php endif; ?>
 
@@ -55,62 +55,55 @@
 
 <section id="respond">
 
-	<h3 id="comment-form-title" class="h2"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __('Leave a Reply', 'simonbelair'), __('Leave a Reply to %s', 'simonbelair') ); ?></h3>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>
 	</div>
 
-	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-  	<div class="help">
-  		<p>You must be <a href="<?= wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
-  	</div>
-	<?php else : ?>
-
 	<form action="<?= get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
 	<?php if ( is_user_logged_in() ) : ?>
 
-	<p class="comments-logged-in-as">Logged in as <a href="<?= get_option('siteurl'); ?>/wp-admin/profile.php"><?= $user_identity; ?></a>. <a href="<?= wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+	<p class="comments-logged-in-as"><?php _e('Logged in as', 'simonbelair'); ?> <a href="<?= get_option('siteurl'); ?>/wp-admin/profile.php"><?= $user_identity; ?></a>. <a href="<?= wp_logout_url(get_permalink()); ?>" title="Log out of this account"><?php _e('Log out', 'simonbelair'); ?> &raquo;</a></p>
 
 	<?php else : ?>
 	
 	<ul id="comment-form-elements" class="clear">
 		
 		<li>
-		  <label for="author">Name <?php if ($req) echo "(required)"; ?></label>
-		  <input type="text" name="author" id="author" value="<?= esc_attr($comment_author); ?>" placeholder="Your Name" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+		  <label for="author"><?php _e('Name', 'simonbelair'); ?> <?php if ($req) echo "(required)"; ?></label>
+		  <input type="text" name="author" id="author" value="<?= esc_attr($comment_author); ?>" placeholder="<?php _e('Your Name', 'simonbelair'); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 		
 		<li>
-		  <label for="email">Mail <?php if ($req) echo "(required)"; ?></label>
-		  <input type="email" name="email" id="email" value="<?= esc_attr($comment_author_email); ?>" placeholder="Your Email" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-		  <small>(will not be published)</small>
+		  <label for="email"><?php _e('Mail', 'simonbelair'); ?> <?php if ($req) echo "(required)"; ?></label>
+		  <input type="email" name="email" id="email" value="<?= esc_attr($comment_author_email); ?>" placeholder="<?php _e('Your Email', 'simonbelair'); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+		  <small><?php _e('(will not be published)', 'simonbelair'); ?></small>
 		</li>
 		
 		<li>
-		  <label for="url">Website</label>
-		  <input type="url" name="url" id="url" value="<?= esc_attr($comment_author_url); ?>" placeholder="Your Website" tabindex="3" />
+		  <label for="url"><?php _e('Website', 'simonbelair'); ?></label>
+		  <input type="url" name="url" id="url" value="<?= esc_attr($comment_author_url); ?>" placeholder="<?php _e('Your Website', 'simonbelair'); ?>" tabindex="3" />
 		</li>
 		
 	</ul>
 
 	<?php endif; ?>
 	
-	<p><textarea name="comment" id="comment" placeholder="Your Comment Here..." tabindex="4"></textarea></p>
+	<p><textarea name="comment" id="comment" placeholder="<?php _e('Your Comment Here...', 'simonbelair'); ?>" tabindex="4"></textarea></p>
 	
 	<p>
-	  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+	  <input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'simonbelair'); ?>" />
 	  <?php comment_id_fields(); ?>
 	</p>
 	
-	<p id="allowed_tags"><strong>XHTML:</strong> You can use these tags: <code><?= allowed_tags(); ?></code></p>
+	<p id="allowed_tags"><strong>XHTML:</strong> <?php _e('You can use these tags:', 'simonbelair'); ?> <code><?= allowed_tags(); ?></code></p>
 	
 	<?php do_action('comment_form', $post->ID); ?>
 	
 	</form>
 	
-	<?php endif; // If registration required and not logged in ?>
 </section>
 
 <?php endif; // if you delete this the sky will fall on your head ?>

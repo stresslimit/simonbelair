@@ -23,7 +23,7 @@
 		<?php else : ?>
 		
 		<article class="post-not-found">
-			  <h1>404 - Page Not Found</h1>
+			  <h1><?php _e('404 - Page Not Found', 'simonbelair'); ?></h1>
 		</article>
 		
 		<?php endif; ?>
