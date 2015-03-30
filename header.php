@@ -40,8 +40,13 @@
     				Montréal 514-794-4410
           </p>
         </div>
+        <?php $languages = icl_get_languages( 'skip_missing=0' );
+		foreach ( $languages as $l ) {
+			if ( !$l['active'] )
+				echo '<a class="lang" href="'.$l['url'].'">'.$l['native_name'].'</a>';
+		} ?>
         <span id="social">
-          <a href="/cadeau"><img class="gift-cert-icon" src="<?php echo get_template_directory_uri() ?>/images/gift-cert.svg"></a>
+          <a class="cadeau" href="/cadeau"><i class="fa fa-gift"></i></a>
           <a href="https://www.facebook.com/SimonBelairAc"><i class="fa fa-facebook-square"> </i> </a>
           <a href="https://twitter.com/Acupuncture_Mtl"><i class="fa fa-twitter-square"> </i> </a>
           <a href="mailto:info@simonbelair.ca"><i class="fa fa-envelope"> </i> </a>

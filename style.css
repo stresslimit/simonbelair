@@ -101,20 +101,29 @@ body { font-size:16px; line-height:1.4; color:#666; background:#f6f6f6; font-fam
 
 /* header */
 header { padding:30px 0 50px; position:relative; }
-header h1 { padding-bottom:20px; margin:0; border:0; position:relative; }
-#logo { display:block; text-decoration:none; border-bottom:0; width:300px; height:84px; background:url('images/logo.png') 0 0 no-repeat; text-indent:-9999em; }
+header h1 { padding-bottom:20px; margin:0; border:0; position:relative; clear:both; }
+#logo { float:left; display:inline-block; text-decoration:none; border-bottom:0; width:80px; height:80px; background:url('images/logo.png') 0 0 no-repeat; text-indent:-9999em; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (-o-min-device-pixel-ratio: 3/2),
     only screen and (min--moz-device-pixel-ratio: 1.5),
     only screen and (min-device-pixel-ratio: 1.5)
   {
-    #logo { background-image:url('images/logo@2x.png'); background-size:300px 84px; }
+    #logo { background-image:url('images/logo@2x.png'); background-size:80px 80px; }
   }
-header .adresse p { color:#666; margin:5px 0 0 110px; }
-#social { position:absolute; top:60px; right:0; }
+header .adresse { display:inline-block; height:27px; padding-top:53px; background:url('images/wordmark.png') 30px 28px no-repeat; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5)
+  {
+    header .adresse { background-image:url('images/wordmark@2x.png'); background-size:168px 20px; }
+  }
+header .adresse p { color:#666; margin:0 0 0 30px; }
+a.lang { position:absolute; top:-3px; right:0; color:#666; font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; border-bottom:none; }
+#social { position:absolute; top:47px; right:0; }
 #social a { border:0; }
 #social a:hover { color:#ce2a1e; }
-.gift-cert-icon { width:45px; }
+#social a.cadeau { font-size: 30px; position: relative; bottom: -2px; }
 #mobile_menu a { display:inline-block; }
 #mobile_menu a::first-child { float:left; }
 #mobile_menu a::last-child { float:right; }
@@ -187,6 +196,7 @@ footer .menu li li a { color:#666; }
   #main { float:none; padding-right:0; width:100%; border-right:0; }
   .sidebar { float:none; width:100%; }
   header { padding-bottom:10px; }
+  a.lang { top:33px; }
   img { max-width:100%; height:auto !important; }
   #main_menu { display:none; }
   #jumptomenu { position:absolute; top:30px; right:0; font-size:24px; }
