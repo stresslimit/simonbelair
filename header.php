@@ -6,7 +6,14 @@
 <title><?php wp_title( ' | ', true, 'right' ) ?></title>
 <link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
 <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/favicon.png" type="image/x-icon">
-
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
 <?php wp_head() ?>
 
 <!--[if lt IE 9]>
