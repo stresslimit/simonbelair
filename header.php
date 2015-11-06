@@ -10,7 +10,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      js.src = "//connect.facebook.net/<?php if ( ICL_LANGUAGE_CODE == 'en' ) { ?>en_US<?php } elseif ( ICL_LANGUAGE_CODE == 'fr' ) { ?>fr_FR<?php } ?>/sdk.js#xfbml=1&version=v2.5";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     
