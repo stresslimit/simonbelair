@@ -160,7 +160,7 @@ article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 .sidebar.principal { border-top:3px solid #ce2a1e; padding-top:10px; }
 .sidebar.principal h1 { border:0; }
 .sidebar.principal h3 { margin:10px 0 20px 0; }
-.sidebar.principal .facebook-label { float: left; font-family: arial, sans-serif; font-size: 14px; font-weight: bold; padding-top: 0.5em; }
+.sidebar.principal .facebook-label { float: left; color: #333; font-family: arial, sans-serif; font-size: 14px; font-weight: bold; padding-top: 0.5em; }
 .sidebar.principal div.fb-like { float: right; margin-bottom: 0.5em; margin-right: 0.3em; }
 .form-rdv { border-bottom:3px solid #ce2a1e; margin-bottom:0.8em; }
 .form-rdv blockquote { padding:0; }
