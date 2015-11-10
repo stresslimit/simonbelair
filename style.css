@@ -119,7 +119,7 @@ header .adresse { display:inline-block; height:27px; padding-top:53px; backgroun
     header .adresse { background-image:url('images/wordmark@2x.png'); background-size:168px 20px; }
   }
 header .adresse p { color:#666; margin:0 0 0 30px; }
-a.lang { position:absolute; top:-3px; right:0; color:#666; font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; border-bottom:none; }
+a.lang { position:absolute; top: 35px; right:0; color:#666; font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; border-bottom:none; }
 #social { position:absolute; top:47px; right:0; }
 #social a { border:0; }
 #social a:hover { color:#ce2a1e; }
