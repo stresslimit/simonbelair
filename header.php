@@ -41,12 +41,6 @@
 			if ( !$l['active'] )
 				echo '<a class="lang" href="'.$l['url'].'">'.$l['native_name'].'</a>';
 		} ?>
-	<div class="fb-like" 
-        	data-href="https://facebook.com/SimonBelairAc" 
-        	data-layout="button_count" 
-        	data-action="like" 
-        	data-show-faces="false">
-    	</div>
 
         <span id="social">
           <a class="cadeau" href="/cadeau"><i class="fa fa-gift"></i></a>
