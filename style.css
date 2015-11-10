@@ -120,7 +120,6 @@ header .adresse { display:inline-block; height:27px; padding-top:53px; backgroun
   }
 header .adresse p { color:#666; margin:0 0 0 30px; }
 a.lang { position:absolute; top:-3px; right:0; color:#666; font-family:arial, sans-serif; font-size:11px; text-transform:uppercase; border-bottom:none; }
-header div.fb-like { float: right; margin-top: 0.85em; }
 #social { position:absolute; top:47px; right:0; }
 #social a { border:0; }
 #social a:hover { color:#ce2a1e; }
@@ -161,6 +160,8 @@ article h3 + ul a { color:#ce2a1e; border-color:#ce2a1e; }
 .sidebar.principal { border-top:3px solid #ce2a1e; padding-top:10px; }
 .sidebar.principal h1 { border:0; }
 .sidebar.principal h3 { margin:10px 0 20px 0; }
+.sidebar.principal .facebook-label { float: left; font-family: arial, sans-serif; font-size: 15px; font-weight: bold; }
+.sidebar.principal div.fb-like { float: right; margin-top: 0.85em; }
 .form-rdv { border-bottom:3px solid #ce2a1e; margin-bottom:0.8em; }
 .form-rdv blockquote { padding:0; }
 
