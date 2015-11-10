@@ -17,6 +17,13 @@
 			endif; echo $c; ?>
 			</div>
 
+<span class="facebook-label">Facebook</span><div class="fb-like" 
+data-href="https://facebook.com/SimonBelairAc" 
+data-layout="button" 
+data-action="like" 
+data-show-faces="false">
+</div>
+
 <a class="twitter-timeline" 
 href="https://twitter.com/Acupuncture_Mtl" 
 data-widget-id="541412331868393472" 
